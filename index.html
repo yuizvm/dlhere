@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>18+ Download</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div id="agegate">
+  <h2>⚠️ 18+ Warning</h2>
+  <p>This site contains adult content.</p>
+  <p>You must be 18 or older to continue.</p>
+  <button onclick="enterSite()">I am 18+</button>
+  <button onclick="leaveSite()">Leave</button>
+</div>
+
+<!-- MAIN CONTENT (HIDDEN UNTIL 18+) -->
+<div id="site" style="display:none;">
+
+  <h1>Download Page</h1>
+  <p>Click below to download.</p>
+
+  <!-- DEVICE DETECTION -->
+  <script>
+    var isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile/i
+      .test(navigator.userAgent);
+  </script>
+
+  <!-- DESKTOP BANNER (DESKTOP ONLY) -->
+  <script>
+    if (!isMobile) {
+      document.write('<script src="PASTE_DESKTOP_BANNER_AD_CODE.js"><\/script>');
+    }
+  </script>
+
+  <!-- POP-UNDER (ALL DEVICES, MAIN MONEY) -->
+  <script>
+    document.write('<script src="PASTE_POPUNDER_AD_CODE.js"><\/script>');
+  </script>
+
+  <br><br>
+
+  <!-- DOWNLOAD BUTTON -->
+  <a href="PASTE_YOUR_DOWNLOAD_LINK_HERE">
+    Download File
+  </a>
+
+  <p>Please wait while the download starts.</p>
+
+</div>
+
+<script>
+function enterSite() {
+  document.getElementById("agegate").style.display = "none";
+  document.getElementById("site").style.display = "block";
+}
+function leaveSite() {
+  window.location.href = "https://google.com";
+}
+</script>
+
+</body>
+</html>
