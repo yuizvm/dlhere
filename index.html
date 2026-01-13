@@ -5,8 +5,18 @@
   <title>18+ Download</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-  <script>(function(s){s.dataset.zone='10457939',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 <body>
+
+<!-- 🔥 MONETAG POP / SMARTLINK SCRIPT -->
+<script>
+(function(s){
+  s.dataset.zone='10457939';
+  s.src='https://al5sm.com/tag.min.js';
+})([document.documentElement, document.body]
+  .filter(Boolean)
+  .pop()
+  .appendChild(document.createElement('script')));
+</script>
 
 <!-- AGE GATE -->
 <div id="agegate">
@@ -17,7 +27,7 @@
   <button onclick="leaveSite()">Leave</button>
 </div>
 
-<!-- MAIN CONTENT (HIDDEN UNTIL 18+) -->
+<!-- MAIN CONTENT -->
 <div id="site" style="display:none;">
 
   <h1>Download Page</h1>
@@ -34,10 +44,17 @@
 
 </div>
 
+<!-- AGE GATE LOGIC -->
+<script>
+function enterSite() {
+  document.getElementById("agegate").style.display = "none";
+  document.getElementById("site").style.display = "block";
+}
+
+function leaveSite() {
+  window.location.href = "https://google.com";
+}
+</script>
 
 </body>
 </html>
-
-
-
-
